@@ -65,11 +65,11 @@ Supporting Articles
 
 NEXT
 ----
-#### configure DOCKER deamon with an insecure registry parameter of 172.30.0.0/16
+#### configure DOCKER deamon with an insecure registry parameter of 172.17.0.0/16
 
 * edit /etc/default/docker, add line
 ```
-DOCKER_OPTS="--insecure-registry 172.30.0.0/16"
+DOCKER_OPTS="--insecure-registry 172.17.0.0/16"
 ```
 But for some reason, docker will not take this after restart.
 This is fixed by editing systemd unit for docker at
@@ -82,7 +82,7 @@ sudo nano /etc/systemd/system/multi-user.target.wants/docker.service
     ```
   Replace with 
     ```
-    /usr/bin/dockerd --insecure-registry 172.30.0.0/16 -H fd://
+    /usr/bin/dockerd --insecure-registry 172.17.0.0/16 -H fd://
     ``` 
 * Now reload systemd
 ```
