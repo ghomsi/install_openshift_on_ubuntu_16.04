@@ -150,3 +150,5 @@ oc cluster down
 Supporting Articles
 -------------------
 - [Local Cluster Management](https://github.com/openshift/origin/blob/master/docs/cluster_up_down.md#linux)
+
+![OpenShiftOrigin local running](https://github.com/ghomsi/install_openshift_on_ubuntu_16.04/raw/master/images/openshift.png)
