@@ -1,7 +1,7 @@
 # install_openshift_on_ubuntu_16.04
 openshift installation demo guide on ubuntu 16.04 amd64
 
-to no if your OS is **amd64** do:
+to know if your OS is **amd64** do:
 ```
 uname -a
 ```
